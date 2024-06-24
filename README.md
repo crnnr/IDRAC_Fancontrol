@@ -64,7 +64,7 @@ While implementing custom fan control can offer benefits, there are potential pr
 
 *It's very important that you monitor the service running here! Otherwise components could overheat or get damaged!*
 
-# What does this thing acutally do
+# What does this thing actually do??
 
 For each temperature range, the script sends a specific command to the iDRAC using the ipmitool command. The command sends a raw IPMI (Intelligent Platform Management Interface) command to adjust the fan speed. The fan speed values (0x0F, 0x14, 0x1e, etc.) correspond to different percentage levels.
 So for example 0x0F is 15% (15 in Hex).
